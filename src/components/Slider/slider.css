@@ -1,0 +1,38 @@
+.Slider .carousel{
+    background-color: #f8f9fa;
+    width: 500px;
+    padding: 40px;
+    border-radius: 10px;
+}
+.Slider .carousel .profile{
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.Slider .carousel .profile img{
+    border-radius: 50rem;
+    width: 60px;
+}
+.Slider .carousel .profile .info_profile{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.Slider .carousel .profile strong{
+    font-weight: 600;
+}
+.Slider .carousel .profile span{
+    color: #6c757d;
+    font-weight: 500;
+}
+
+@media screen and (max-width:650px) {
+    .Slider .carousel{
+        background-color: #f8f9fa;
+        width: 300px;
+        padding: 40px;
+        border-radius: 10px;
+        scale: .95;
+    }
+    
+  }

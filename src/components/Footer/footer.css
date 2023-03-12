@@ -1,0 +1,56 @@
+
+.Footer{
+    margin:100px 0 70px 260px;
+    padding: 0 48px;
+    position: relative;
+}
+
+.Footer .container{
+    display: flex;
+    justify-content: space-between;
+    color: #252b33;
+}
+
+.Footer .container .rules span a{
+    color: #252b33;
+    position: relative;
+    padding: 0px 15px;
+    transition: all .5s;
+}
+
+.Footer .container .rules span a:hover{
+    color: #20c997;
+    transition: all .5s;
+}
+
+
+.Footer .container .rules span:last-child a::before{
+    background-color: rgba(0,0,0,.2);
+    content: "";
+    display: block;
+    height: 14px;
+    left: 0%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
+    width: 1px;
+}
+@media screen and (max-width:1250px) {
+    .Footer{
+        margin:100px 0 70px 0px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .Footer{
+        margin:100px 0 70px 0px;
+    }
+    .Footer .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+}

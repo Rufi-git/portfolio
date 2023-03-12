@@ -1,0 +1,105 @@
+.Home{
+    margin-left: 260px !important;
+    position: relative;
+}
+
+.Home .home_bg{
+    background-image: url("../../contents/image/intro-bg.jpg");
+    background-attachment: fixed;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.Home .home_bg .theme{
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+.Home .home_bg .home_text{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.Home .home_bg .home_text h3{
+    font-size: 28px;
+    margin-bottom: -10px;
+}
+
+.Home .home_bg .home_text p{
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.Home .home_bg .home_text h1{
+    font-size: 68px;
+    font-weight: 700;
+}
+
+.Home .home_bg .home_text a{
+    background-color: transparent;
+    border: 2px solid #20c997;
+    padding: 12.8px 41.6px;
+    margin: 8px 0;
+    font-size: 16px;
+    border-radius: 800px;
+    transition: all 1s ease;
+    color: #20c997;
+}
+
+.Home .home_bg .home_text a:hover{
+    background-color: #20c997;
+    color: white;
+    transition: all 1s ease;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width:1250px) {
+    .Home{
+        margin-left: 0px !important;
+    }
+    .Home .home_bg .home_text h1{
+        font-size: 58px;
+    }
+    
+}
+
+@media screen and (max-width:1070px) {
+    .Home .home_bg .home_text h1{
+        font-size: 45px;
+    }
+    .Home .home_bg .home_text p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:580px){
+    .Home .home_bg .home_text h1{
+        font-size: 35px;
+    }
+    .Home .home_bg .home_text p{
+        font-size: 14px;
+    }
+    .Home .home_bg .home_text a{
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+}

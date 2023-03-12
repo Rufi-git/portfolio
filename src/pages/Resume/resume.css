@@ -1,0 +1,145 @@
+.Resume{
+    margin:100px 0 70px 260px;
+    padding: 0 48px;
+    position: relative;
+}
+
+.Resume .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Resume .container .resume_details{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
+.Resume .container .resume_details .ed_ex h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #252b33;
+}
+.Resume .container .resume_details .ed_ex .ed_ex_item{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Resume .container .resume_details .ed_ex .ed_ex_item .ed_ex_item_list{
+    border:1px solid #6c757d solid #dee2e6;
+    border-radius: 7px;
+    padding: 20px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+.Resume .container .resume_details .ed_ex .ed_ex_item .ed_ex_item_list .year{
+    font-size: .875rem;
+    background-color: #20c997;
+    color: white;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.Resume .container .resume_details .ed_ex .ed_ex_item .ed_ex_item_list .name{
+    font-size: 1.3rem;
+    color: #252b33;
+}
+.Resume .container .resume_details .ed_ex .ed_ex_item .ed_ex_item_list .text{
+    margin-top: 10px;
+    color: #4c4d4d;
+}
+
+.Resume .container .skills{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.Resume .container .skills{
+    display: flex;
+    flex-direction: column;
+}
+.Resume .container .skills h3{
+    font-weight: 600;
+    color: #252b33;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.Resume .container .skills .skill_item{
+    width: 100%;
+}
+
+.Resume .container .skills .skill_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Resume .container .skills .skill_info span{
+    margin-bottom: .5rem;
+    color: #252b33;
+    font-weight: 500;
+}
+
+.Resume .container .skills .progressbar{
+    width: 100%;
+    height: .5rem;
+    background-color: #e9ecef;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+}
+.Resume .container .skills .progressbar .bar{
+    position: relative;
+    width: 65%;
+    height: 0.5rem;
+    background-color: #20c997;
+    border-radius: 20px;
+
+}
+.Resume .container .cv{
+  margin-top: 50px;  
+}
+
+.Resume .container .cv a{
+    color: #6c757d;
+    border: 2px solid #6c757d;
+    border-radius: 50rem;
+    padding: .8rem 2.6rem;
+    transition: all .5s;
+}
+.Resume .container .cv a:hover{
+    background-color: #6c757d;
+    color: white; 
+    transition: all .5s;
+}
+
+.Resume .container .cv a i{
+    margin-left: 2px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:1250px) {
+    .Resume{
+        margin:100px 0 70px 0px;
+        padding: 0 48px;
+        position: relative;
+    }
+}
+@media screen and (max-width:770px) {
+    .Resume .container .resume_details{
+        flex-direction: column;
+    }
+    .Resume .container .skills .skill_item{
+        flex-direction: column;
+        width: 100%;
+    }
+    .Resume .container .skills .skill_item .skill_list{
+        width: 100%;
+    }
+}

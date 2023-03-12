@@ -1,0 +1,199 @@
+.Testimonial{
+    margin:120px 0 130px 260px;
+    padding: 0 48px;
+    position: relative;
+}
+
+.Testimonial .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Testimonial .container .slider{
+  gap: 20px;
+}
+
+.react-multi-carousel-list  {
+    width: 1500px;
+}
+
+.react-multi-carousel-list .react-multi-carousel-track   {
+    display: flex;
+    gap: 150px;
+}
+
+.custom-dot-list {
+  position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+  }
+  
+  .custom-dot-list li {
+    list-style: none;
+    margin: 0 5px;
+  }
+  
+  .custom-dot-list button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+  }
+  .custom-dot-list button:active{
+    background-color: red;
+  }
+  
+  .custom-dot-list button:focus {
+    outline: none;
+  }
+  .custom-dot-list li.react-multi-carousel-dot--active{
+    border: 1px solid #20c997;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .custom-dot-list li.react-multi-carousel-dot--active button{
+    background-color: #20c997;
+    margin: 0;
+    padding: 0;
+  }
+  
+@media screen and (max-width:1700px) {
+  .react-multi-carousel-list  {
+    width: 1200px;
+  }
+  .react-multi-carousel-list .react-multi-carousel-track   {
+    gap: 220px;
+  }
+}
+@media screen and (max-width:1700px) {
+  .react-multi-carousel-list  {
+    width: 1200px;
+  }
+  .react-multi-carousel-list .react-multi-carousel-track   {
+    gap: 250px;
+  }
+}
+@media screen and (max-width:1400px) {
+  .react-multi-carousel-list  {
+    width: 1000px;
+  }
+  .react-multi-carousel-list .react-multi-carousel-track   {
+    gap: 280px;
+  }
+}
+
+@media screen and (max-width:1300px) {
+  .react-multi-carousel-list  {
+    width: 900px;
+  }
+  .react-multi-carousel-list .react-multi-carousel-track   {
+    gap: 300px;
+  }
+}
+  
+@media screen and (max-width:1250px) {
+  .Testimonial{
+    margin:100px 0 70px 0px;
+  }
+  .react-multi-carousel-list  {
+    width: 1100px;
+  }
+  .react-multi-carousel-list .react-multi-carousel-track   {
+    gap: 250px;
+  }
+  
+}
+
+@media screen and (max-width:1130px) {
+  .react-multi-carousel-list  {
+    width: 900px;
+  }
+  .react-multi-carousel-list .react-multi-carousel-track   {
+    gap: 300px;
+  }
+  
+}
+
+@media screen and (max-width:1024px) {
+  .react-multi-carousel-list  {
+    width: 890px;
+  }
+  .react-multi-carousel-list .react-multi-carousel-track   {
+    gap: 230px;
+  }
+  
+}
+
+
+@media screen and (max-width:970px) {
+  .react-multi-carousel-list  {
+    width: 800px;
+  }
+  .react-multi-carousel-list .react-multi-carousel-track   {
+    gap: 260px;
+  }
+  
+}
+
+@media screen and (max-width:850px) {
+  .react-multi-carousel-list  {
+    max-width: 700px;
+  }
+  .react-multi-carousel-list .react-multi-carousel-track   {
+    gap: 290px;
+  }
+  
+}
+
+@media screen and (max-width:750px) {
+  .react-multi-carousel-list  {
+    max-width: 600px;
+  }
+  .react-multi-carousel-list .react-multi-carousel-track   {
+    gap: 330px;
+  }
+  
+}
+
+@media screen and (max-width:650px) {
+  .react-multi-carousel-list  {
+    max-width: 500px;
+  }
+  .react-multi-carousel-list .react-multi-carousel-track   {
+    gap: 150px;
+  }
+  
+}
+
+@media screen and (max-width:550px) {
+  .react-multi-carousel-list  {
+    max-width: 430px;
+  }
+  .react-multi-carousel-list .react-multi-carousel-track   {
+    gap: 160px;
+  }
+  
+}
+
+@media screen and (max-width:465px) {
+  .react-multi-carousel-list  {
+    max-width: 330px;
+  }
+  .react-multi-carousel-list .react-multi-carousel-track   {
+    gap: 130px;
+  }
+  
+}

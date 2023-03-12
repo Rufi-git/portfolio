@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+.container{
+  max-width: 1320px !important;
+}
+a{
+  text-decoration: none;
+  color: #20c997;
+}
+a:hover{
+  color: #20c997;
+}
+
+li{
+  list-style: none;
+}

@@ -1,0 +1,68 @@
+.Job{
+    margin:0px 0 100px 260px;
+    padding: 100px 48px;
+    position: relative;
+    background-color: #f8f9fa;
+}
+
+.Job .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Job .container .service_info{
+    padding: 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+.Job .container .service_info .service_list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    max-width: 800px;
+}
+.Job .container .service_info .service_list .service_text h3{
+    font-size: 20px;
+    color: #252b33;
+    
+}
+.Job .container .service_info .service_list .service_icon{
+    display: flex;
+    color: #20c997;
+    background-color: white;
+    padding: 0;
+    width: 100px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    border-radius: 10px;
+}
+
+.Job .container .service_info .service_list .service_icon i{
+    font-weight: 900;
+    font-size: 28px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:1250px) {
+    .Job{
+        margin:0px 0 100px 0;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .Job .container .service_info .service_list .service_icon{
+        width: 100px;
+        height: 40px;
+    }
+
+    .Job .container .service_info .service_list .service_icon i{
+        font-weight: 900;
+        font-size: 20px;
+    }
+}

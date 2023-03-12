@@ -1,0 +1,126 @@
+.Contact{
+    margin:0px 0 0 260px;
+    padding: 100px 48px;
+    position: relative;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+}
+
+.Contact .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    white-space: nowrap;
+    margin: 0 !important;
+}
+
+.Contact .container .contact-us .find .address{
+    max-width: 200px;
+    color: #4d555a;
+}
+.Contact .container .contact-us .find .address p{
+    white-space: normal;
+}
+.Contact .container .contact-us .find .address .media{
+    display: flex;
+    gap: 13px;
+    justify-content: flex-start;
+    align-self: center;
+    line-height: 2.3rem;
+}
+.Contact .container .contact-us .find .address .icon{
+    color: #20c997;
+}
+.Contact .container .contact-us .find .address h3,.social h3, .note h3{
+    color: #252b33;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+.Contact .container .contact-us .find .social{
+    margin-top: 20px;
+}
+
+.Contact .container .contact-us .find .social .social-icons{
+    display: flex;
+    gap: 20px;
+    align-self: flex-start;
+    padding: 0;
+    margin: 20px 0 0 5px;
+}
+
+.Contact .container .contact-us .find .social .social-icons .social-icon-list{
+    margin: 2px 3px;
+    cursor: pointer;
+}
+
+.Contact .container .contact-us .find .social .social-icons .social-icon-list i{
+    font-size: 18px;
+    color: #4d555a;
+}
+
+
+.Contact .container .contact-us .note .form-control{
+    padding: 0.81rem 0.96rem;
+}
+
+.Contact .container .contact-us .note .form-control.textarea{
+    height: 150px;
+}
+.Contact .container .contact-us .note .form button{ 
+    padding: .8rem 0rem;
+    background-color: #20c997;
+    border: 1px solid #20c997;
+    border-radius: 50rem;
+    color: white;
+    transition: all .5s;
+}
+
+.Contact .container .contact-us .note .form button:hover{ 
+    box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
+    background-color: #1baa80;
+    transition: all .5s;
+}
+
+
+@media screen and (max-width:1250px) {
+    .Contact{
+        margin:100px 0 70px 0px;
+    }
+    .Contact .container .contact-us .find .address h3,.social h3, .note h3{
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width:1000px) {
+    .Contact{
+        margin:100px 0 70px 0px;
+    }
+    .Contact .container .contact-us .note .form button{
+        padding: .8rem 4.5rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .Contact .container .contact-us {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .Contact .container .contact-us .find{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .Contact .container .contact-us .note .form button{
+        padding: .8rem 4rem;
+        font-size: 14px;
+    }
+}

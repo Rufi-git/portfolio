@@ -1,0 +1,72 @@
+.Heading .info{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    white-space: nowrap;
+}
+.Heading .info h1{
+    color: #dee3e4!important;
+    opacity: .4;
+    font-size: 8.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.Heading .info h4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.Heading .info h4 .line{
+    display: flex;
+    width: 70px;
+    background-color: #20c997;
+    height: 3px;
+    margin-top: 5px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:1250px) {
+    .Heading .info h1{
+        font-size: 7rem;
+    }
+    .Heading .info h4{
+        font-size: 1.75rem;
+    }
+    
+}
+
+@media screen and (max-width:1070px) {
+    .Heading .info h1{
+        font-size: 6rem;
+    }
+    .Heading .info h4{
+        font-size: 1.55rem;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .Heading .info h1{
+        font-size: 4rem;
+    }
+    .Heading .info h4{
+        font-size: 1.25rem;
+    }
+}
+
+
+@media screen and (max-width:550px) {
+    .Heading .info h1{
+        font-size: 3.3rem;
+    }
+    .Heading .info h4{
+        font-size: 1.15rem;
+    }
+    
+  }
