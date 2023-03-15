@@ -5,14 +5,15 @@ import pdf from "../../contents/pdf/CV - Rufi Aliyev.pdf"
 import { db } from "../../config/firebase";
 import { getDocs, collection } from "firebase/firestore";
 import { useEffect, useState } from "react";
+export const capitalize = (str) => {
+    return str.split(" ").map(word => {
+        return word.charAt(0).toUpperCase() + word.slice(1);
+      }).join(" ");
+}
 const Resume = () => {
     const [educationList, setEducationList] = useState([]);
     const educationCollectionRef = collection(db, "educations")
-    const capitalize = (str) => {
-        return str.split(" ").map(word => {
-            return word.charAt(0).toUpperCase() + word.slice(1);
-          }).join(" ");
-    }
+    
     useEffect(() => {
         const getEducationList = async () => {
             try {

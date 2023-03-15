@@ -1,13 +1,46 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { testimonials } from "../../../../data";
 import Table from "../../components/Table/Table";
+import { getDocs, collection } from "firebase/firestore";
+import { db } from "../../../../config/firebase";
+
+
 import "./chat.css";
 
 const Chat = () => {
-    const [headers, setHeaders] = useState(["Image", "User", "Country", "Feedback"])
-    const tableName = "Testimonials"
+    const [headers, setHeaders] = useState(["Image", "User","Email", "Country", "Feedback","Stars","Order"])
+    const tableName = "testimonials"
     const link = "chat"
+
+
+
+    const [tableList, setTableList] = useState([]);
+
+    const tableCollectionRef = collection(db, tableName)
+
+    useEffect(() => {
+        const getTableList = async () => {
+            try {
+                const data = await getDocs(tableCollectionRef);
+                const filteredData = data.docs.map((doc) => ({
+                    id: doc.id,
+                    image: doc.image,
+                    fullname: doc.fullname,
+                    email: doc.email,
+                    country: doc.country,
+                    feedback: doc.feedback,
+                    star: Number(doc.star),
+                    ...doc.data()
+                }))
+                setTableList(filteredData)
+            } catch (error) {
+                console.log(error)
+            }
+        }
+        getTableList();
+    }, [])
+
 
     // const table = testimonials.map((data) => {
     //     return {
@@ -23,7 +56,7 @@ const Chat = () => {
                 link={link}
                 tableName={tableName}
                 tableHeaders={headers}
-                table={testimonials}
+                table={tableList}
             />
         </div>
     );

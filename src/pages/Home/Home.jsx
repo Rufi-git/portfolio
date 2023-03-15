@@ -25,7 +25,7 @@ const Home = () => {
                         strings: [
                             "I'm Rufi Aliyev",
                             "I'm a Freelancer.",
-                            "I'm a Photographer.",
+                            "I'm a Web Developper.",
                             "I'm a Designer.",
                           ],
                         speed: 50,

@@ -1,7 +1,7 @@
 import Heading from "../../components/Heading/Heading";
 import {testimonials} from "../../data";
 import { db } from "../../config/firebase";
-import { getDocs, collection } from "firebase/firestore";
+import { getDocs, collection, query, orderBy } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
@@ -29,23 +29,46 @@ const Testimonial = () => {
             items: 1
         }
     };
-    const [testimonialList, setTestimonialList] = useState([]);
-    const testimonialCollectionRef = collection(db, "testimonials")
+    // const [testimonialList, setTestimonialList] = useState([]);
+    // const testimonialCollectionRef = collection(db, "testimonials")
+    // useEffect(() => {
+    //     const getTestimonialList = async () => {
+    //         try {
+    //             const data = await getDocs(testimonialCollectionRef);
+    //             const filteredData = data.docs.map((doc)=>({
+    //                 ...doc.data(),
+    //             }))
+    //             setTestimonialList(filteredData.filter((active)=>active.isActive==true));
+    //         } catch (error) {
+    //             console.log(error)
+    //         }
+    //     }
+
+    //     getTestimonialList()
+    // }, [])
+
+
+
+    const [tableList, setTableList] = useState([]);
+
+    const tableCollectionRef = collection(db, "testimonials")
     useEffect(() => {
-        const getTestimonialList = async () => {
+        const getTableList = async () => {
             try {
-                const data = await getDocs(testimonialCollectionRef);
-                const filteredData = data.docs.map((doc)=>({
-                    ...doc.data(),
+                const data = await getDocs(tableCollectionRef);
+                const filteredData = data.docs.map((doc) => ({
+                    id: doc.id,
+                    ...doc.data()
                 }))
-                setTestimonialList(filteredData.filter((active)=>active.isActive==true));
+                setTableList(filteredData)
             } catch (error) {
                 console.log(error)
             }
         }
-
-        getTestimonialList()
+        getTableList();
     }, [])
+
+
 
     
     return (
@@ -73,10 +96,10 @@ const Testimonial = () => {
                 renderDotsOutside={true}
                 >
                     {
-                        testimonials.map((value,index)=>{
+                        tableList.map((value,index)=>{
                             return(
                                 <div key={index}>
-                                    <Slide img={value.img} user={value.name} country ={value.country} feedback={value.feedback}/>
+                                    <Slide img={value.image} user={value.fullname} country ={value.country} feedback={value.feedback} star={Number(value.star)}/>
                                 </div>
                             )
                         })

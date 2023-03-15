@@ -20,7 +20,7 @@ const USER_TYPES = {
     NORMAL:"normal",
     ADMIN:"admin",
 }
-const CURRENT_USER_TYPE = USER_TYPES.PUBLIC
+const CURRENT_USER_TYPE = USER_TYPES.ADMIN
 function App() {
 
     return (

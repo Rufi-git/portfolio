@@ -43,37 +43,37 @@ export const links = [
 
 export const linksAdmin = [
     {
-        icon:<i class="fa-solid fa-person"></i>,
+        icon:<i className="fa-solid fa-person"></i>,
         name:"About",
         path:"/admin/"
     },
     {
-        icon:<i class="fa-brands fa-rocketchat"></i>,
+        icon:<i className="fa-brands fa-rocketchat"></i>,
         name:"Chat",
         path:"/admin/chat"
     },
     {
-        icon:<i class="fa-solid fa-address-book"></i>,
+        icon:<i className="fa-solid fa-address-book"></i>,
         name:"contact",
         path:"/admin/contact"
     },
     {
-        icon:<i class="fa-solid fa-briefcase"></i>,
+        icon:<i className="fa-solid fa-briefcase"></i>,
         name:"Portfolio",
         path:"/admin/portfolio"
     },
     {
-        icon:<i class="fa-solid fa-address-card"></i>,
+        icon:<i className="fa-solid fa-address-card"></i>,
         name:"Resume",
         path:"/admin/resume"
     },
     {
-        icon:<i class="fa-sharp fa-solid fa-database"></i>,
+        icon:<i className="fa-sharp fa-solid fa-database"></i>,
         name:"Service",
         path:"/admin/service"
     },
     {
-        icon:<i class="fa-solid fa-user"></i>,
+        icon:<i className="fa-solid fa-user"></i>,
         name:"User",
         path:"/admin/user"
     }

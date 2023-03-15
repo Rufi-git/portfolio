@@ -12,7 +12,7 @@ const Sidebar = () => {
                     <ul className="menu_item">
                         {linksAdmin.map((value, index) => {
                             return (
-                                <NavLink spy={true} smooth={true} offset={10} duration={100} to={value.path}
+                                <NavLink to={value.path}
                                    key={index}>
                                             {value.icon}
                                     <li className="menu_item_list">

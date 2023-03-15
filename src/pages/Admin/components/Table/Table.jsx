@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 import { about_me } from "../../../../data";
 import "./table.css"
+import { useEffect, useRef, useState } from "react";
+import { capitalize } from "../../../Resume/Resume";
 const Table = ({ link, tableName, tableHeaders, table }) => {
+    
     return (
         <div className="TableAdmin">
             <div class="container">
                 <div className="tableHead">
-                    <h4>{tableName}</h4>
+                    <h4>{capitalize(tableName)}</h4>
 
                     <Link to={`/admin/${link}/create`}>
                         <button class="create">
@@ -40,12 +43,12 @@ const Table = ({ link, tableName, tableHeaders, table }) => {
                                         <td>
                                             <div class="button">
                                                 <button class="btn btn-warning">
-                                                    <Link to={`/admin/${link}/edit/${table.id}`}>Edit</Link>
+                                                    <Link to={`/admin/${link}/edit/${value.id}`}>Edit</Link>
                                                 </button>
-                                                <button class="btn btn-danger">
-                                                    <Link to={`/admin/${link}/delete/${table.id}`}>Delete</Link>
+                                                <button class="btn btn-danger" data-toggle="modal" data-target={`#Modal_${value.id}`}>
+                                                    Delete
+                                                    {/* <Link to={`/admin/${link}/delete/${value.id}`}>Delete</Link> */}
                                                 </button>
-
                                             </div>
                                         </td>
                                     </tr>

@@ -1,0 +1,17 @@
+.Create {
+  width: 100%;
+}
+.Create .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  width: 100%;
+}
+.Create .container form {
+  width: 800px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}/*# sourceMappingURL=create.css.map */

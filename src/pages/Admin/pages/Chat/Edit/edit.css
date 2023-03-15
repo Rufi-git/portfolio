@@ -1,0 +1,27 @@
+.EditChat {
+  width: 100%;
+}
+.EditChat .container {
+  width: 100%;
+  height: 100vh;
+  margin-top: 40px;
+}
+.EditChat .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.EditChat .container form img {
+  max-width: 200px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.EditChat .container form img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}/*# sourceMappingURL=edit.css.map */
