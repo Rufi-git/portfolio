@@ -1,10 +1,17 @@
 import Create from "../../../../components/Create/Create";
 import "./create.css"
 const CreateExp = () => {
+    const dbName = "experiences"
+    const link = "job"
     const inputs = [
         { 
-            id: "period", 
-            displayName: "Period", 
+            id: "start_year", 
+            displayName: "Start Year", 
+            type: "text" 
+        },
+        { 
+            id: "end_year", 
+            displayName: "End Year", 
             type: "text" 
         },
         { 
@@ -25,7 +32,7 @@ const CreateExp = () => {
       ];
     return (
         <div className="CreateExp">
-            <Create inputs={inputs} />
+            <Create inputs={inputs} dbName={dbName} link={link} />
         </div>
     )
 }

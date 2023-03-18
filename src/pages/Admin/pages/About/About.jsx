@@ -14,7 +14,7 @@ import Contact from "../Contact/Contact"
 import Sidebar from "../../components/Sidebar/Sidebar";
 
 const About = () => {
-    const [headers, setHeaders] = useState(["Image", "Name", "Age", "Email",  "Birth Place", "Currently Live","Order"])
+    const [headers, setHeaders] = useState(["Image", "Name", "Age", "Email",  "Birth Place", "Currently Live"])
     const tableName = "about"
     const link = "about"
 

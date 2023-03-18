@@ -25,8 +25,8 @@ const Resume = () => {
                 const data = await getDocs(tableCollectionEduRef);
                 const filteredData = data.docs.map((doc) => ({
                     id: doc.id,
-                    name: doc.name,
-                    degree: doc.degree,
+                    university: doc.university,
+                    faculty: doc.faculty,
                     start_year: doc.start_year,
                     end_year: doc.end_year,
                     about: doc.about,

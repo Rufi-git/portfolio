@@ -8,7 +8,7 @@ const CreateChat = () => {
         {
             id: "image",
             displayName: "Select Avatar",
-            type: "file"
+            type: "text"
         },
         {
             id: "fullname",

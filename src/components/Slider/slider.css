@@ -12,6 +12,9 @@
 .Slider .carousel .profile img{
     border-radius: 50rem;
     width: 60px;
+    box-sizing: border-box;
+    height: 60px;
+    object-fit: cover;
 }
 .Slider .carousel .profile .info_profile{
     display: flex;

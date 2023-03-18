@@ -6,9 +6,11 @@ import { db } from "../../config/firebase";
 import { getDocs, collection } from "firebase/firestore";
 import { useEffect, useState } from "react";
 export const capitalize = (str) => {
-    return str.split(" ").map(word => {
+    return (
+        str&&
+        str.split(" ").map(word => {
         return word.charAt(0).toUpperCase() + word.slice(1);
-      }).join(" ");
+      }).join(" "));
 }
 const Resume = () => {
     const [educationList, setEducationList] = useState([]);
@@ -19,9 +21,10 @@ const Resume = () => {
             try {
                 const data = await getDocs(educationCollectionRef);
                 const filteredData = data.docs.map((doc)=>({
+                    id: doc.id,
                     ...doc.data(),
                 }))
-                setEducationList(filteredData.filter((active)=>active.isActive==true));
+                setEducationList(filteredData);
             } catch (error) {
                 console.log(error)
             }
@@ -34,8 +37,8 @@ const Resume = () => {
         <section className="Resume" id="resume">
             <div className="container">
                 <Heading header="summary" subHeader="Resume" />
-                <div className="resume_details">
-                    <div className="ed_ex">
+                <div className="resume_details row">
+                    <div className="ed_ex col-6">
                         <h3>My Education</h3>
                         <ul className="ed_ex_item">
                             {
@@ -44,10 +47,10 @@ const Resume = () => {
                                         <li className="ed_ex_item_list" key={index}>
                                             <p className="year">{education.start_year} - {education.end_year}</p>
                                             <h4 className="name">
-                                                {capitalize(education.degree)}
+                                                {capitalize(education.faculty)}
                                             </h4>
                                             <span className="choice text-danger">
-                                                {capitalize(education.name)}
+                                                {capitalize(education.university)}
                                             </span>
                                             <p className="text mb-2">
                                                 {education.about}
@@ -59,7 +62,7 @@ const Resume = () => {
                             }
                         </ul>
                     </div>
-                    <div className="ed_ex">
+                    <div className="ed_ex col-6">
                         <h3>My Experience</h3>
                         <ul className="ed_ex_item">
                             {

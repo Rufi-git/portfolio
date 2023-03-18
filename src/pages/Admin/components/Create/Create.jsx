@@ -12,9 +12,7 @@ const Create = ({ inputs, dbName, link }) => {
     const [isSubmitting, setIsSubmitting] = useState(false);
 
 
-
     const [tableList, setTableList] = useState([]);
-
     const tableCollectionRef = collection(db, dbName)
     useEffect(() => {
         const getTableList = async () => {
@@ -43,7 +41,10 @@ const Create = ({ inputs, dbName, link }) => {
             console.log("Error happened: " + error)
         } finally {
             setIsSubmitting(false)
+            if(link!="educations"||link!="experiences")
             navigate(`/admin/${link}`)
+            else
+            navigate(`/admin/resume`)
         }
 
     }
@@ -54,6 +55,8 @@ const Create = ({ inputs, dbName, link }) => {
             [id]: value,
             order: tableList.length + 1
         }));
+        console.log(tableList)
+
     };
     return (
 

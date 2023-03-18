@@ -1,11 +1,18 @@
 import Create from "../../../../components/Create/Create";
 import "./create.css"
 const CreateEdu = () => {
+    const dbName = "educations"
+    const link = "education"
     const inputs = [
         { 
-            id: "period", 
-            displayName: "Period", 
-            type: "text" 
+            id: "start_year", 
+            displayName: "Start Year", 
+            type: "number" 
+        },
+        { 
+            id: "end_year", 
+            displayName: "End Year", 
+            type: "number" 
         },
         { 
             id: "faculty", 
@@ -22,10 +29,11 @@ const CreateEdu = () => {
             displayName: "About", 
             type: "text" 
         },
+        
       ];
     return (
         <div className="CreateEdu">
-            <Create inputs={inputs} />
+            <Create inputs={inputs} dbName={dbName} link={link} />
         </div>
     )
 }

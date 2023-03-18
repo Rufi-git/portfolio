@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { testimonials } from "../../../../data";
 import Table from "../../components/Table/Table";
 import { getDocs, collection } from "firebase/firestore";
 import { db } from "../../../../config/firebase";
@@ -9,11 +7,9 @@ import { db } from "../../../../config/firebase";
 import "./chat.css";
 
 const Chat = () => {
-    const [headers, setHeaders] = useState(["Image", "User","Email", "Country", "Feedback","Stars","Order"])
+    const [headers, setHeaders] = useState(["Image", "User","Email", "Country", "Feedback","Stars"])
     const tableName = "testimonials"
     const link = "chat"
-
-
 
     const [tableList, setTableList] = useState([]);
 
@@ -50,6 +46,7 @@ const Chat = () => {
     //         feedback: data.feedback,
     //     };
     // });
+    console.log(tableList)
     return (
         <div className="ChatAdmin"id="chatadmin">
             <Table
