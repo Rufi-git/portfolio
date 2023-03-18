@@ -38,7 +38,7 @@ const Resume = () => {
             <div className="container">
                 <Heading header="summary" subHeader="Resume" />
                 <div className="resume_details row">
-                    <div className="ed_ex col-6">
+                    <div className="ed_ex col-md-6">
                         <h3>My Education</h3>
                         <ul className="ed_ex_item">
                             {
@@ -62,7 +62,7 @@ const Resume = () => {
                             }
                         </ul>
                     </div>
-                    <div className="ed_ex col-6">
+                    <div className="ed_ex col-md-6">
                         <h3>My Experience</h3>
                         <ul className="ed_ex_item">
                             {
