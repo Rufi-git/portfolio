@@ -5,15 +5,6 @@ import Login from "./pages/Authentication/Login"
 import Register from "./pages/Authentication/Register"
 import Home from "./pages/Home/Home"
 
-import About from "./pages/Admin/pages/About/About"
-import Chat from "./pages/Admin/pages/Chat/Chat"
-import Portfolio from "./pages/Admin/pages/Portfolio/Portfolio"
-import Resume from "./pages/Admin/pages/Resume/Resume"
-import Service from "./pages/Admin/pages/Service/Service"
-import User from "./pages/Admin/pages/User/User"
-import Contact from "./pages/Admin/pages/Contact/Contact"
-
-import Sidebar from "./pages/Admin/components/Sidebar/Sidebar"
 import Admin from "./pages/Admin/Admin"
 const USER_TYPES = {
     PUBLIC:"public",
