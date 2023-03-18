@@ -10,7 +10,7 @@ import emailjs from '@emailjs/browser';
 import "./contact.css"
 import Loading from "../Admin/components/Loading/Loading.jsx";
 export const Contact = () => {
-    const [isSended, setIsSended] = useState(false);
+    const [isSended, setIsSended] = useState(true);
     const [isLoading, setIsLoading] = useState(false);
     const form = useRef();
     const testimonialCollectionRef = collection(db, "testimonials")

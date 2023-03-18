@@ -39,6 +39,7 @@
     0% {
       transform: translate(-50%, -150%);
     }
+
     100% {
       transform: translate(-50%, -50%);
     }
@@ -54,8 +55,73 @@
     0% {
       transform: translate(-50%, -50%);
     }
+
     100% {
       transform: translate(-50%, -150%);
+    }
+  }
+}
+
+@media screen and (max-width:900px) {
+  .Success {
+    .success-message {
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      width: 500px;
+      align-items: center;
+      .success-message-content{
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:650px) {
+  .Success {
+    .success-message {
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      width: 400px;
+      align-items: center;
+      .success-message-content{
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:650px) {
+  .Success {
+    .success-message {
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      width: 350px;
+      align-items: center;
+      .success-message-content{
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:400px) {
+  .Success {
+    .success-message {
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      width: 300px;
+      align-items: center;
+      .success-icon{
+        font-size: 25px !important;
+      }
+      .success-message-content{
+        font-size: 13px;
+      }
     }
   }
 }
